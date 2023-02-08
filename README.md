@@ -39,3 +39,11 @@ terraform apply
 ```
 
 Switching between workspaces can be achieved by running `./workspace.sh` -script
+
+If you have 2 workspaces (test, test2), the result is 3 tfstate files:
+
+```
+terraform.tfstate
+terraform.tfstateenv:test
+terraform.tfstateenv:test2
+```
